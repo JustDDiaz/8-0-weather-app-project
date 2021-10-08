@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
   <body>
-    <main class="display">
-      <article>
+    <main>
+      <article class='form'>
         <h1>Weather App</h1>
         <form>
           <label for="search-text">Pick a Location</label>
@@ -15,7 +22,15 @@
     </main>
     <div class="history">
       <h3>Previous Searches</h3>
+      <p>No previous searches.</p>
     </div>
-    <article></article>
+    <article class="result display"">
+      <h2></h2>
+      <p class="default">Choose a location to view the weather.</p>
+      <p class="area"></p>
+      <p class="region"></p>
+      <p class="country"></p>
+      <p class="currently"></p>
+    </article>
   </body>
 </html>
