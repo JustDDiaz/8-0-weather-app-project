@@ -61,6 +61,10 @@ document.querySelector(".form form").addEventListener("submit", (event) => {
         .querySelector(".history li")
         .addEventListener("click", (event) => {
           event.preventDefault();
+          const search = event.target.weather.value;
+          fetch(`https://wttr.in/${search}?format=j1`)
+            .then((response) => response.json())
+            .then(weather);
         });
       li.prepend(a);
       const text = document.querySelector(".history p");
